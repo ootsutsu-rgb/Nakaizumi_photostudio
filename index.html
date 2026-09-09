@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="狛江・中和泉の写真館。家族・記念写真、ポートレート、証明写真。撮影プランと税込料金をご案内します。">
+  <title>中和泉写真スタジオ｜家族写真・ポートレート・証明写真</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="中和泉写真スタジオ ホーム">
+      <span class="brand-copy"><small>狛江通り・中和泉</small><strong>写真スタジオ</strong></span>
+    </a>
+    <nav class="main-nav" aria-label="メインナビゲーション">
+      <a href="#top">ホーム</a><a href="#plans">撮影プラン・料金</a>
+      <a href="#contact">アクセス &amp; お問い合わせ</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="hero-intro">
+        <p class="eyebrow">SINCE 2022 ・ KOMAE</p>
+        <h1 id="hero-title"><span class="headline-line">いつもの通りで、</span><span class="headline-line">いつもと違う記念日を</span></h1>
+        <p class="hero-lead"><span class="copy-line">いつもの狛江通りで、大切な節目を写真に残しませんか。</span><span class="copy-line">七五三や家族の記念写真から、プロフィール・証明写真まで、お気軽にご相談ください。</span></p>
+        <a class="text-link" href="#plans">撮影プラン・料金を見る <span aria-hidden="true">↓</span></a>
+      </div>
+
+      <div class="portrait-stage" aria-label="記念写真ギャラリー">
+        <div class="antique-frame">
+          <div class="frame-inner">
+            <img id="feature-image" src="assets/gallery-01-retouched.png" alt="家族で楽しむ七五三の記念写真">
+            <div class="gallery-controls">
+              <button id="gallery-prev" class="gallery-arrow" type="button" aria-label="前の写真を見る">←</button>
+              <button id="gallery-next" class="gallery-arrow" type="button" aria-label="次の写真を見る">→</button>
+            </div>
+            <p id="gallery-status" class="sr-only" aria-live="polite">家族で楽しむ七五三の記念写真、1枚目 / 10枚中</p>
+          </div>
+        </div>
+        <p class="gallery-count" aria-hidden="true"><span id="gallery-current">01</span> — 10</p>
+      </div>
+    </section>
+
+    <section id="plans" class="plans-section" aria-labelledby="plans-title">
+      <p class="eyebrow">PHOTO PLANS</p>
+      <h2 id="plans-title">撮りたい写真から、選べるプラン。</h2>
+      <p class="plans-intro">家族の節目も、自分らしい一枚も、毎日に必要な写真も。<br>表示料金はすべて税込です。</p>
+      <div class="plan-grid">
+        <article class="plan-card">
+          <p class="plan-purpose">家族の節目を、ゆっくり残す</p>
+          <h3>家族・記念写真</h3>
+          <p class="plan-price">38,000<span>円（税込）</span></p>
+          <p>七五三・成人記念・入学・誕生日・兄弟・三世代写真など。ご夫婦での記念撮影に。</p>
+          <ul><li>撮影 約60分</li><li>納品対象の全データ・50枚以上</li><li>お好きな写真のA4プリント2枚</li><li>時間内でお一人・兄弟・ご家族の撮影</li></ul>
+          <p class="plan-note">お支度を済ませてご来店いただくプランです。</p>
+          <a class="plan-link" href="#reservation-form" data-plan="家族・記念写真（お支度済み）">家族・記念写真を相談する →</a>
+        </article>
+        <article class="plan-card">
+          <p class="plan-purpose">自分らしさを伝える一枚に</p>
+          <h3>ポートレート・<br>プロフィール写真</h3>
+          <p class="plan-price">16,500<span>円（税込）</span></p>
+          <p>お仕事のプロフィール・SNS・お誕生日など、気軽なおひとり撮影に。</p>
+          <ul><li>お一人・撮影 約20分</li><li>お好きな写真のデータ5枚</li><li>お着替えなし・背景1種類</li><li>プリントは別途オプション</li></ul>
+          <p class="plan-note">衣装替えや全データをご希望の場合は、家族・記念写真プランをご利用ください。</p>
+          <a class="plan-link" href="#reservation-form" data-plan="ポートレート・プロフィール写真">ポートレートを相談する →</a>
+        </article>
+        <article class="plan-card">
+          <p class="plan-purpose">提出先に合わせた写真を</p>
+          <h3>証明写真</h3>
+          <p class="plan-price">2,500<span>円（税込）</span></p>
+          <p>履歴書・パスポート・マイナンバーなど。用途と必要なサイズをお知らせください。</p>
+          <ul><li>撮影＋プリント3枚</li><li>同じ写真・同じサイズでお渡し</li><li>データは含まれません</li></ul>
+          <p class="plan-note">お渡し時間は事前にお問い合わせください。</p>
+          <a class="plan-link" href="#reservation-form" data-plan="証明写真">証明写真を相談する →</a>
+        </article>
+      </div>
+      <aside class="dressing-box" aria-labelledby="dressing-title">
+        <div><h3 id="dressing-title">店内でのお支度をご希望の方へ</h3>
+        <p class="dressing-price">46,000円（税込）<span> ＋ 外注着付け・ヘアセット代</span></p>
+        <p>家族・記念写真プランの内容に、お支度スペースの利用・準備片付け・手配対応を含みます。撮影とお支度は同じスペースで行います。</p>
+        <p>外注費を含む総額をご予約確定前にご案内します。</p></div>
+        <a class="plan-link" href="#reservation-form" data-plan="家族・記念写真（店内でお支度）">店内のお支度を相談する →</a>
+      </aside>
+      <div class="plan-details">
+        <div><h3>追加プリント</h3>
+          <dl class="print-prices"><div><dt>A4プリント・1枚</dt><dd>3,300円（税込）</dd></div><div><dt>L判プリント・1枚</dt><dd>550円（税込）</dd></div></dl>
+        </div>
+        <div><h3>写真のお渡しについて</h3>
+          <p><strong>データは当日、プリントは翌日。</strong><br>家族・記念写真とポートレートのデータは当日中に納品します。プリントは仕上がりを確認して翌日お渡し。準備が整えば当日のお渡しも可能です。</p>
+          <p class="plan-note">データはJPEG形式・長辺3,000px（短辺は写真の比率によります）。全データはテスト撮影・ピンぼけ・重複などを除いた納品対象の全カットです。証明写真のお渡し時間は別途お問い合わせください。</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="sr-only">アクセスとご予約・お問い合わせ</h2>
+      <div class="studio-card">
+        <p class="eyebrow">ACCESS</p>
+        <dl>
+          <div><dt>所在地</dt><dd>〒201-0012<br>東京都狛江市中和泉5-1-22</dd></div>
+          <div><dt>交通</dt><dd>小田急線「狛江駅」北口より徒歩約16分<br>小田急バス「都営狛江団地」停留所より徒歩約2分</dd></div>
+          <div><dt>電話</dt><dd><a href="tel:09017080433">090-1708-0433</a></dd></div>
+          <div><dt>お車</dt><dd>スタジオから徒歩約10秒のコインパーキングをご利用ください</dd></div>
+        </dl>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%8B%9B%E6%B1%9F%E5%B8%82%E4%B8%AD%E5%92%8C%E6%B3%895-1-22" target="_blank" rel="noopener">地図を開く <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <form id="reservation-form" class="reservation-form" aria-label="撮影のご予約・お問い合わせ">
+        <p class="eyebrow">RESERVATION</p>
+        <div class="field-row">
+          <label><span class="field-label">お名前 <b>必須</b></span><input type="text" name="name" autocomplete="name" required></label>
+          <label><span class="field-label">ふりがな</span><input type="text" name="kana"></label>
+        </div>
+        <div class="field-row">
+          <label><span class="field-label">メールアドレス <b>必須</b></span><input type="email" name="email" autocomplete="email" required></label>
+          <label><span class="field-label">電話番号</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel"></label>
+        </div>
+        <div class="field-row">
+          <label><span class="field-label">撮影内容 <b>必須</b></span>
+            <select name="plan" required>
+              <option value="">選択してください</option>
+              <option>家族・記念写真（お支度済み）</option><option>家族・記念写真（店内でお支度）</option><option>ポートレート・プロフィール写真</option><option>証明写真</option><option>その他のご相談</option>
+            </select>
+          </label>
+          <label><span class="field-label">撮影希望日</span><input type="date" name="preferredDate"></label>
+        </div>
+        <label><span class="field-label">ご相談内容 <b>必須</b></span><textarea name="message" rows="5" required></textarea></label>
+        <label class="consent"><input type="checkbox" name="consent" required><span>入力内容を確認し、メール送信に同意します。</span></label>
+        <button class="submit-button" type="submit">メールで送る <span aria-hidden="true">→</span></button>
+        <p id="form-status" class="form-status" role="status"></p>
+      </form>
+    </section>
+
+    <section class="faq-section" aria-labelledby="faq-title">
+      <div class="faq-heading">
+        <p class="eyebrow">Q &amp; A</p>
+        <h2 id="faq-title">よくあるご質問</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>七五三や成人式の衣装を持ち込めますか？</summary>
+          <p>はい、お持ち込みいただけます。七五三の衣装はスタジオでもご用意しておりますので、ご相談ください。着付け・ヘアセットは外注で、事前見積もりとなります。店内でのお支度付きプランもございます。繁忙期は対応できない場合もございますので、お早めにご相談ください。</p>
+        </details>
+        <details>
+          <summary>家族や兄弟も一緒に撮影できますか？</summary>
+          <p>家族・記念写真プランでは、撮影時間内で兄弟・ご家族も一緒に撮影いただけます。人数やご希望の組み合わせは事前にお知らせください。</p>
+        </details>
+        <details>
+          <summary>ペットと一緒に撮影できますか？</summary>
+          <p>はい、ペットとの撮影も可能です。猫ちゃんと一緒に撮影されたお客様もいらっしゃいます。小さなスタジオのため、事前に一度スペースをご確認いただくと安心です。</p>
+        </details>
+        <details>
+          <summary>撮影にはどのくらい時間がかかりますか？</summary>
+          <p>家族・記念写真は約60分、ポートレートは約20分です。受付や写真選び、お支度の時間は別途必要です。証明写真の所要時間はお問い合わせください。</p>
+        </details>
+        <details>
+          <summary>写真データは受け取れますか？</summary>
+          <p>家族・記念写真は納品対象の全データ50枚以上、ポートレートはお好きな写真5枚を当日中にお渡しします。証明写真の基本料金にはデータは含まれません。</p>
+        </details>
+        <details>
+          <summary>駐車場はありますか？</summary>
+          <p>専用駐車場はございません。スタジオから徒歩約10秒のコインパーキングをご利用ください。</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
