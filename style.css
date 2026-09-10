@@ -24,6 +24,9 @@ body {
   font-family: var(--sans);
   font-size: 16px;
   line-height: 1.8;
+  letter-spacing: .025em;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
 }
 a { color: inherit; }
 button, input, select, textarea { font: inherit; }
@@ -46,7 +49,7 @@ button, input, select, textarea { font: inherit; }
 .brand-copy small { order: 1; margin-bottom: .28rem; color: var(--green); font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; font-size: .64rem; font-weight: 700; letter-spacing: .16em; }
 .brand-copy strong { order: 2; font-family: "Hiragino Kaku Gothic StdN", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif; font-size: 1.65rem; font-weight: 800; letter-spacing: -.06em; }
 .main-nav { display: flex; gap: 2.5rem; }
-.main-nav a { position: relative; padding: 2.6rem 0 2.35rem; text-decoration: none; font-size: .9rem; letter-spacing: .06em; }
+.main-nav a { position: relative; padding: 2.6rem 0 2.35rem; text-decoration: none; font-size: .9rem; letter-spacing: .035em; }
 .main-nav a::after { content: ""; position: absolute; right: 0; bottom: -1px; left: 0; height: 3px; background: var(--green); transform: scaleX(0); transition: transform .25s ease; }
 .main-nav a:hover::after, .main-nav a:focus-visible::after { transform: scaleX(1); }
 
@@ -62,12 +65,12 @@ button, input, select, textarea { font: inherit; }
 }
 .hero-intro { align-self: center; max-width: 580px; }
 .eyebrow { margin: 0 0 1.4rem; color: var(--green); font-family: Georgia, serif; font-size: .78rem; font-weight: 700; letter-spacing: .22em; }
-h1, h2 { margin: 0; font-family: var(--serif); font-weight: 500; letter-spacing: .04em; line-height: 1.48; }
+h1, h2 { margin: 0; font-family: var(--serif); font-weight: 500; letter-spacing: .025em; line-height: 1.48; }
 .hero h1 { font-size: clamp(2.7rem, 4.15vw, 3.4rem); letter-spacing: -.045em; line-height: 1.26; }
 .headline-line { display: block; width: max-content; max-width: 100%; padding: .08em .19em .12em; color: white; background: var(--blue); white-space: nowrap; }
 .headline-line:first-child { margin-bottom: .18em; font-size: .65em; letter-spacing: .01em; }
 .headline-line:last-child { font-size: 1em; }
-.hero-lead { max-width: 580px; margin: 3rem 0 0; color: #3e574d; letter-spacing: .015em; line-height: 2; word-break: normal; line-break: strict; }
+.hero-lead { max-width: 580px; margin: 3rem 0 0; color: #3e574d; letter-spacing: .01em; line-height: 2; word-break: normal; line-break: strict; }
 .copy-line { display: block; }
 .text-link { display: inline-flex; gap: .7rem; align-items: center; margin-top: 2.3rem; text-underline-offset: .3em; }
 .text-link span { color: var(--green); font-size: 1.2rem; }
@@ -143,7 +146,7 @@ h1, h2 { margin: 0; font-family: var(--serif); font-weight: 500; letter-spacing:
 .faq-heading h2 { font-size: clamp(1.8rem, 3vw, 3rem); }
 .faq-list { border-top: 1px solid rgba(35,54,47,.3); }
 .faq-list details { border-bottom: 1px solid rgba(35,54,47,.3); }
-.faq-list summary { position: relative; padding: 1.45rem 3.25rem 1.45rem 0; font-family: var(--serif); font-size: 1.05rem; font-weight: 600; line-height: 1.7; cursor: pointer; list-style: none; }
+.faq-list summary { position: relative; padding: 1.45rem 3.25rem 1.45rem 0; font-family: var(--serif); font-size: 1.05rem; font-weight: 600; letter-spacing: .015em; line-height: 1.7; cursor: pointer; list-style: none; }
 .faq-list summary::-webkit-details-marker { display: none; }
 .faq-list summary::after { content: "+"; position: absolute; top: 50%; right: .65rem; color: var(--blue); font-family: var(--sans); font-size: 1.5rem; font-weight: 400; transform: translateY(-50%); }
 .faq-list details[open] summary::after { content: "−"; }
@@ -200,17 +203,17 @@ h1, h2 { margin: 0; font-family: var(--serif); font-weight: 500; letter-spacing:
 .plan-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.3rem; }
 .plan-card { display: flex; flex-direction: column; padding: 2rem; background: #f8f7f2; border-top: 4px solid var(--green); }
 .plan-purpose { color: var(--green); font-size: .85rem; margin: 0 0 .8rem; }
-.plan-card h3 { font-family: var(--serif); font-size: 1.35rem; line-height: 1.5; margin: 0; min-height: 4.1rem; }
-.plan-price { font-size: 2.3rem; font-weight: 700; margin: 1rem 0; line-height: 1.4; }
-.plan-price span { font-size: .85rem; margin-left: .4rem; white-space: nowrap; }
+.plan-card h3 { font-family: var(--serif); font-size: 1.35rem; line-height: 1.5; letter-spacing: .015em; margin: 0; min-height: 4.1rem; }
+.plan-price { font-size: 2.3rem; font-weight: 700; letter-spacing: .01em; margin: 1rem 0; line-height: 1.4; }
+.plan-price span { font-size: .85rem; margin-left: .4rem; letter-spacing: 0; white-space: nowrap; }
 .plan-card ul { padding-left: 1.25rem; margin: .5rem 0 1rem; }
 .plan-card li { margin-bottom: .5rem; }
 .plan-note { font-size: .85rem; color: #45564f; }
 .plan-link { display: block; margin-top: auto; padding-top: 1.2rem; color: #265345; font-weight: 700; text-underline-offset: .3em; }
 .dressing-box { margin-top: 1.5rem; padding: 2rem; border: 1px solid #9eaaa3; background: rgba(248,247,242,.5); }
 .plans-section h3 { margin-top: 0; }
-.dressing-price { font-size: 1.6rem; font-weight: 700; margin: 1rem 0; }
-.dressing-price span { display: inline-block; font-size: 1rem; }
+.dressing-price { font-size: 1.6rem; font-weight: 700; letter-spacing: .01em; margin: 1rem 0; }
+.dressing-price span { display: inline-block; font-size: 1rem; letter-spacing: 0; }
 .plan-details { display: grid; grid-template-columns: 1fr 1.4fr; gap: 3rem; margin-top: 3rem; }
 .print-prices { margin: 0; }
 .print-prices div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; border-bottom: 1px solid #9eaaa3; padding: 1rem 0; }
@@ -240,4 +243,5 @@ h1, h2 { margin: 0; font-family: var(--serif); font-weight: 500; letter-spacing:
 }
 
 #reservation-form { scroll-margin-top: 24px; }
+
 
