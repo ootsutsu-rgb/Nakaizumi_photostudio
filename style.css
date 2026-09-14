@@ -72,6 +72,7 @@ h1, h2 { margin: 0; font-family: var(--serif); font-weight: 500; letter-spacing:
 .headline-line:last-child { font-size: 1em; }
 .hero-lead { max-width: 580px; margin: 3rem 0 0; color: #3e574d; letter-spacing: .01em; line-height: 2; word-break: normal; line-break: strict; }
 .copy-line { display: block; }
+.no-orphan { white-space: nowrap; }
 .text-link { display: inline-flex; gap: .7rem; align-items: center; margin-top: 2.3rem; text-underline-offset: .3em; }
 .text-link span { color: var(--green); font-size: 1.2rem; }
 
