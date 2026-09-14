@@ -154,6 +154,11 @@ h1, h2, h3, p, li, dt, dd, summary { text-wrap: pretty; }
 .faq-list details[open] summary::after { content: "−"; }
 .faq-list details p { margin: 0; padding: 0 3.25rem 1.65rem 0; color: #45564f; line-height: 1.9; }
 
+.about-section { width: min(calc(100% - 64px), var(--max-width)); margin: 0 auto; padding: clamp(4.5rem, 8vw, 7rem) 0; display: grid; grid-template-columns: .52fr 1.48fr; gap: clamp(4rem, 9vw, 9rem); border-top: 1px solid rgba(35,54,47,.22); }
+.about-heading h2 { font-size: clamp(1.8rem, 3vw, 3rem); }
+.about-copy { max-width: 46rem; color: #45564f; }
+.about-copy p { margin: 0 0 1.35rem; line-height: 1.95; }
+
 .redirect-page { min-height: 100vh; display: grid; place-items: center; }
 .redirect-page main { padding: 2rem; text-align: center; }
 
@@ -171,12 +176,13 @@ h1, h2, h3, p, li, dt, dd, summary { text-wrap: pretty; }
   .brand-copy strong { font-size: 1.42rem; }
   .main-nav { gap: 1.4rem; }
   .main-nav a { padding: 2rem 0 1.8rem; font-size: .78rem; }
-  .hero, .news-section, .contact-section, .faq-section { width: min(calc(100% - 40px), var(--max-width)); }
+  .hero, .news-section, .contact-section, .faq-section, .about-section { width: min(calc(100% - 40px), var(--max-width)); }
   .hero { min-height: auto; grid-template-columns: 1fr; gap: 5rem; padding: 6rem 0 7rem; }
   .hero-intro { max-width: 650px; }
   .portrait-stage { width: min(100%, 520px); justify-self: center; }
   .contact-section { grid-template-columns: 1fr; gap: 5rem; }
   .faq-section { grid-template-columns: 1fr; gap: 3.5rem; }
+  .about-section { grid-template-columns: 1fr; gap: 2.5rem; }
 }
 
 @media (max-width: 580px) {
@@ -200,6 +206,7 @@ h1, h2, h3, p, li, dt, dd, summary { text-wrap: pretty; }
   .field-row { grid-template-columns: 1fr; gap: 0; }
   .reservation-form { padding: 1.6rem; }
   .faq-section { padding: 4.5rem 0; gap: 2.5rem; }
+  .about-section { padding: 4rem 0; gap: 2rem; }
   .faq-list summary { padding-top: 1.2rem; padding-bottom: 1.2rem; font-size: 1rem; }
   .faq-list details p { padding-right: 1rem; }
 }
