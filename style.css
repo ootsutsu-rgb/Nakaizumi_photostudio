@@ -164,6 +164,7 @@ h1, h2 { margin: 0; font-family: var(--serif); font-weight: 500; letter-spacing:
 .season-news-copy .news-note { color: #45564f; font-size: .9rem; }
 .season-news-image { min-height: 330px; }
 .season-news-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+/* Cloudflare deployment refresh */
 
 @media (max-width: 1050px) {
   .site-header { width: min(calc(100% - 40px), var(--max-width)); min-height: 98px; }
