@@ -235,12 +235,6 @@ h1, h2 { margin: 0; font-family: var(--serif); font-weight: 500; letter-spacing:
 @media(max-width:1050px) { .plans-section { width: calc(100% - 40px); } .plan-grid { grid-template-columns: 1fr; } .plan-card h3 { min-height: auto; } }
 @media(max-width:580px) { .plans-section { padding: 3rem 0; } .plan-card,.dressing-box { padding: 1.4rem; } .plan-details { grid-template-columns: 1fr; gap: 2rem; } .main-nav { flex-wrap: wrap; gap: .8rem; } }
 
-/* Center the child while keeping the outstretched hands inside the frame. */
-.frame-inner img[src$="gallery-02.jpg"] {
-  object-position: center;
-  transform: scale(1.12) translateY(-5%);
-}
-
 @media (max-width: 580px) {
   body { line-height: 1.65; }
   .hero-lead { line-height: 1.7; margin-top: 1.5rem; }
