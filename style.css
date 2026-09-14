@@ -56,9 +56,8 @@ button, input, select, textarea { font: inherit; }
 
 .hero {
   width: min(calc(100% - 64px), var(--max-width));
-  min-height: calc(100vh - 116px);
   margin: 0 auto;
-  padding: clamp(5rem, 9vw, 9rem) 0;
+  padding: clamp(3rem, 5vw, 4.5rem) 0;
   display: grid;
   grid-template-columns: minmax(500px, 1fr) minmax(420px, 500px);
   align-items: center;
